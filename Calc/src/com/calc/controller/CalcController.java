@@ -1,8 +1,7 @@
 package com.calc.controller;
-
-public class CalcController {
 import com.calc.model;
 import java.util.Scanner; 
+public class CalcController {
 public void add() 
 	 {
 	 Scanner sc = new Scanner(System.in);
