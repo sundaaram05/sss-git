@@ -1,6 +1,7 @@
 package com.calc.controller;
 import com.calc.model;
 import java.util.Scanner; 
+
 public class CalcController {
 public void add() 
 	 {
@@ -24,7 +25,7 @@ public void add()
 	 System.out.println("Enter second number");
 	 int num2= sc.nextInt();
     float res= num1-num2;
-	 System.out.println("The substraction result is "+res);
+	 System.out.println("The substraction is "+res);
 	 }
 	 
 	 public void mult() 
@@ -36,7 +37,7 @@ public void add()
 	 System.out.println("Enter second number");
 	 int num2= sc.nextInt();
      float res= num1*num2;
-	 System.out.println("The multiplication result is "+res);
+	 System.out.println("The multiplication  is "+res);
 	 }
 	 
 	 public void divide() 
@@ -48,6 +49,6 @@ public void add()
 	 System.out.println("Enter second number");
 	 int num2= sc.nextInt();
 	 float res= num1/num2;
-	 System.out.println("The division result is "+res);
+	 System.out.println("The division is "+res);
 	 }
 }
