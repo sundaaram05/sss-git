@@ -1,54 +1,18 @@
 package com.calc.controller;
-import com.calc.model;
-import java.util.Scanner; 
 
-public class CalcController {
-public void add() 
-	 {
-	 Scanner sc = new Scanner(System.in);
-	 
-	 System.out.println("Enter first number");
-	 int num1= sc.nextInt();
-	 System.out.println("Enter second number");
-	 int num2= sc.nextInt();
-	 //System.out.println("Enter first number");
-	 float res= num1+num2;
-	 System.out.println("The addition result is "+res);
-	 }
-	 
-	 public void substract() 
-	 {
-	 Scanner sc = new Scanner(System.in);
-	 
-	 System.out.println("Enter first number");
-	 int num1= sc.nextInt();
-	 System.out.println("Enter second number");
-	 int num2= sc.nextInt();
-    float res= num1-num2;
-	 System.out.println("The substraction is "+res);
-	 }
-	 
-	 public void mult() 
-	 {
-	 Scanner sc = new Scanner(System.in);
-	 
-	 System.out.println("Enter first number");
-	 int num1= sc.nextInt();
-	 System.out.println("Enter second number");
-	 int num2= sc.nextInt();
-     float res= num1*num2;
-	 System.out.println("The multiplication  is "+res);
-	 }
-	 
-	 public void divide() 
-	 {
-	 Scanner sc = new Scanner(System.in);
-	 
-	 System.out.println("Enter first number");
-	 int num1= sc.nextInt();
-	 System.out.println("Enter second number");
-	 int num2= sc.nextInt();
-	 float res= num1/num2;
-	 System.out.println("The division is "+res);
-	 }
+import java.util.*;
+
+public class CalcController implements CalcInterface {
+	public void calcTotal() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the first number: ");
+		int x = sc.nextInt();
+
+		System.out.print("Enter the second number: ");
+		int y = sc.nextInt();
+		int result = x + y;
+		
+		System.out.print("Result: "+result);
+	}
+
 }
